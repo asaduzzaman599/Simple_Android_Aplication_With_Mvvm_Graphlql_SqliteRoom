@@ -1,0 +1,2 @@
+rootProject.name = "Android_GraphQl_Mvvm_SqliteRoom"
+include ':app'

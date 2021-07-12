@@ -1,0 +1,22 @@
+query GetPostById($id: ID!){
+    post(id: $id) {
+        id
+        title
+        body
+    }
+}
+
+query LoadAllPosts(
+    $options: PageQueryOptions
+) {
+    posts(options: $options) {
+        data {
+            id
+            title
+            body
+        }
+        meta {
+            totalCount
+        }
+    }
+}
